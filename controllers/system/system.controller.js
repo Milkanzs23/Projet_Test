@@ -102,5 +102,6 @@ module.exports = {
           getCommunes,
           getZones,
           getCollines,
-          getAvenues
+          getAvenues,
+          getTest
 }
