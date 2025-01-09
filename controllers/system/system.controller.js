@@ -84,6 +84,8 @@ const getAvenues = async (req, res) => {
 const getTest = async (req,res) =>{
     try {
         const { collineId } = req.params
+        const avenues = await query('SELECT * FROM syst_avenue WHERE COLLINE_ID = ? ORDER BY AVENUE_NAME', [collineId])
+                    res.status(200).json(avenues)
         
 
     }catch (error){
