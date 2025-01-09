@@ -83,9 +83,11 @@ const getAvenues = async (req, res) => {
 
 const getTest = async (req,res) =>{
     try {
+        const { collineId } = req.params
+        
 
     }catch (error){
-        
+
     }
 }
 
